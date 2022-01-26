@@ -1,47 +1,30 @@
 {
-  "name": "my-new-pwa",
-  "short_name": "my-new-pwa",
-  "start_url": "https://goyalish.github.io/INFO-6128-Share-Target-Lab/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#aac8d4",
-  "theme_color": "#75929D",
-  "icons": [
-    {
-      "src": "assets/images/icon.png",
-      "type": "image/png",
-      "sizes": "512x512 192x192 64x64 32x32 24x24 16x16"
-    },
-    {
-      "src": "assets/images/maskable_icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Open Messages",
-      "short_name": "Messages",
-      "description": "Open the app to your messages",
-      "url": "https://goyalish.github.io/INFO-6128-Share-Target-Lab/messages",
-      "icons": [{ "src": "assets/images/messages.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Open Settings",
-      "short_name": "Settings",
-      "description": "Open the app to the settings",
-      "url": "https://goyalish.github.io/INFO-6128-Share-Target-Lab/settings",
-      "icons": [{ "src": "assets/images/settings.png", "sizes": "192x192" }]
-    }
-  ],
+  "short_name": "Share",
+  "name": "Share Target Test",
   "share_target": {
-    "action": "share.html",
-    "method": "GET",
+    "action": "target.html",
     "params": {
       "title": "title",
       "text": "text",
       "url": "url"
     }
-  }
+  },
+  "description": "Web Share Target Demo",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f3e5f5",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#4a148c"
 }
